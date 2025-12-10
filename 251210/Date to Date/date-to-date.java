@@ -8,17 +8,17 @@ public class Main {
         int d2 = sc.nextInt();
         int[] month = new int[]{31,28,31,30,31,30,31,31,30,31,30,31};
         int total1 = 0;
-        for(int i = 0; i < m2; i++){
+        for(int i = 0; i < m2-1; i++){
             total1 += month[i];
         }
         total1 += d2;
 
         int total2 = 0;
-        for(int i = 0 ; i < m1; i++){
+        for(int i = 0 ; i < m1-1; i++){
             total2 += month[i];
         }
         total2+=d1;
-        System.out.println(total1-total2);
+        System.out.println(total1-total2+1);
 
 
 
