@@ -29,7 +29,7 @@ public class Main {
             case "Fri":
                 total-=4;
                 break;
-            case "Sas":
+            case "Sat":
                 total-=5;
                 break;
             case "Sun":
