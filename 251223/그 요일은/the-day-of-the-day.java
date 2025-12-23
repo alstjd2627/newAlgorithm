@@ -36,7 +36,7 @@ public class Main {
                 total-=6;
                 break;
         }
-        System.out.println(total%7+1);
+        System.out.println(total%7);
         
     }
 }
