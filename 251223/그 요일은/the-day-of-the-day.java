@@ -10,11 +10,15 @@ public class Main {
         int d2 = sc.nextInt();
         String A = sc.next();
         int total = 0;
+        if(m1 == m2){
+            total = m2 - m1 +1;
+        } else{
         for(int i = m1+1; i < m2; i++){
             total += days[i];
         }
         total += days[m1]-d1+1;
         total += d2;
+        }
         switch(A){
             case "Tue":
                 total-=1;
