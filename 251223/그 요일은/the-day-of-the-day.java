@@ -13,28 +13,28 @@ public class Main {
         for(int i = m1+1; i < m2; i++){
             total += days[i];
         }
-        total += days[m1]-d1;
+        total += days[m1]-d1+1;
         total += d2;
         switch(A){
             case "Tue":
-                total-=1;
+                total+=1;
                 break;
             case "Wed":
-                total-=2;
+                total+=2;
                 break;
             case "Thu":
-                total-=3;
+                total+=3;
                 break;
             case "Fri":
-                total-=4;
+                total+=4;
                 break;
             case "Sat":
-                total-=5;
+                total+=5;
                 break;
             case "Sun":
-                total-=6;
+                total+=6;
                 break;
         }
-        System.out.println(total/7+1);
+        System.out.println(total/7);
     }
 }
