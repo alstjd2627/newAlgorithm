@@ -9,12 +9,11 @@ public class Main {
         int m2 = sc.nextInt();
         int d2 = sc.nextInt();
         String A = sc.next();
-        
         int total = 0;
-        for(int i = m1; i <= m2; i++){
+        for(int i = m1+1; i < m2; i++){
             total += days[i];
         }
-        total += d1;
+        total += days[m1]-d1;
         total += d2;
         switch(A){
             case "Tue":
@@ -36,7 +35,6 @@ public class Main {
                 total-=6;
                 break;
         }
-        System.out.println(total%7);
-        
+        System.out.println(total/7+1);
     }
 }
