@@ -16,7 +16,27 @@ public class Main {
         }
         total += d1;
         total += d2;
-        System.out.println(total%7);
+        switch(A){
+            case "TUE":
+                total-=1;
+                break;
+            case "WED":
+                total-=2;
+                break;
+            case "THU":
+                total-=3;
+                break;
+            case "FRI":
+                total-=4;
+                break;
+            case "SAT":
+                total-=5;
+                break;
+            case "SUN":
+                total-=6;
+                break;
+        }
+        System.out.println(total%7+1);
         
     }
 }
