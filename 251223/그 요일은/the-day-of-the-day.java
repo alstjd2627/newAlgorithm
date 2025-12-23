@@ -17,22 +17,22 @@ public class Main {
         total += d1;
         total += d2;
         switch(A){
-            case "TUE":
+            case "Tue":
                 total-=1;
                 break;
-            case "WED":
+            case "Wed":
                 total-=2;
                 break;
-            case "THU":
+            case "Thu":
                 total-=3;
                 break;
-            case "FRI":
+            case "Fri":
                 total-=4;
                 break;
-            case "SAT":
+            case "Sas":
                 total-=5;
                 break;
-            case "SUN":
+            case "Sun":
                 total-=6;
                 break;
         }
