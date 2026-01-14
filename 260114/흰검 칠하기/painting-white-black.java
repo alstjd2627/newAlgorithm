@@ -5,7 +5,6 @@ public class Main {
         int N = sc.nextInt();
         int[] white = new int[200002];
         int[] black = new int[200002];
-        int[] gray = new int[200002];
         int[] last = new int[200002];
         int current = 100000;
         for (int i = 0; i < N; i++) {
@@ -18,7 +17,6 @@ public class Main {
                         last[current] = 2;
                     }
                     if(black[current] >= 2 && white[current] >= 2){
-                        gray[current] = 1;
                         last[current] = 3;
                     }
                     current++;
@@ -28,7 +26,6 @@ public class Main {
                         last[current] = 1;
                     }
                     if(black[current] >= 2 && white[current] >= 2){
-                        gray[current] = 1;
                         last[current] = 3;
                     }
                     current--;
