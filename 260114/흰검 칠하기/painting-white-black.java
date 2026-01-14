@@ -3,10 +3,10 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
-        int[] white = new int[200001];
-        int[] black = new int[200001];
-        int[] gray = new int[200001];
-        int[] last = new int[200001];
+        int[] white = new int[200002];
+        int[] black = new int[200002];
+        int[] gray = new int[200002];
+        int[] last = new int[200002];
         int current = 100000;
         for (int i = 0; i < N; i++) {
             int x = sc.nextInt();
