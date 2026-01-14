@@ -24,7 +24,7 @@ public class Main {
                     }
                     current++;
                 } else{
-                    current--;
+                    
                     if(gray[current] == 1) continue;
                     if(white[current] < 2){
                         white[current]++;
@@ -34,8 +34,12 @@ public class Main {
                         gray[current] = 1;
                         last[current] = 3;
                     }
+                    current--;
                 }
             }
+            if(d =='R') current--;
+            else current++;
+            
         }
         int whiteCount = 0;
         int blackCount = 0;
