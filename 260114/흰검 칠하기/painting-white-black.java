@@ -13,7 +13,6 @@ public class Main {
             char d = sc.next().charAt(0);
             for(int j = 0 ; j < x; j++){
                 if(d == 'R'){
-                    if(gray[current] == 1) continue;
                     if(black[current] < 2){
                         black[current]++;
                         last[current] = 2;
@@ -24,8 +23,6 @@ public class Main {
                     }
                     current++;
                 } else{
-                    
-                    if(gray[current] == 1) continue;
                     if(white[current] < 2){
                         white[current]++;
                         last[current] = 1;
