@@ -29,6 +29,6 @@ public class Main {
                 cc = nc;
             }
         }
-        System.out.println(nr + " " +nc);
+        System.out.println(cr + " " +cc);
     }
 }
