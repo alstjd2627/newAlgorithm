@@ -4,12 +4,12 @@ public class Main {
     static int[] dr = {0,1,0,-1};
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int m = sc.nextInt();
+        int N = sc.nextInt();
+        int M = sc.nextInt();
         int[][] map = new int[N][M];
         int cc = 0;
         int cr = 0;
-        int map[cc][cr] =1;
+        map[cc][cr] =1;
         int count = 1;
         int nc = 0; int nr = 0;
         int dir = 0;
